@@ -1,0 +1,576 @@
+/* Page Header */
+.page-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Animated Cards Background */
+.animated-cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.animated-card {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+}
+
+.animated-card::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.card-1 {
+    top: -20px;
+    left: 10%;
+    transform: rotate(-15deg);
+    animation: floatCard 8s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+.card-2 {
+    top: 40%;
+    right: 5%;
+    transform: rotate(10deg);
+    animation: floatCard 7s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+.card-3 {
+    bottom: -30px;
+    left: 20%;
+    transform: rotate(5deg);
+    animation: floatCard 9s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.card-4 {
+    top: 30%;
+    left: 5%;
+    transform: rotate(-5deg);
+    animation: floatCard 6s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0) rotate(var(--rotation, 0deg));
+    }
+    50% {
+        transform: translateY(20px) rotate(var(--rotation, 0deg));
+    }
+    100% {
+        transform: translateY(0) rotate(var(--rotation, 0deg));
+    }
+}
+
+.card-1 {
+    --rotation: -15deg;
+}
+
+.card-2 {
+    --rotation: 10deg;
+}
+
+.card-3 {
+    --rotation: 5deg;
+}
+
+.card-4 {
+    --rotation: -5deg;
+}
+
+/* Rummy Basics */
+.rummy-basics {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.basics-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.basics-text {
+    flex: 3;
+}
+
+.basics-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.basics-text h3 {
+    color: var(--primary-color);
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+}
+
+.card-values {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.card-values li {
+    margin-bottom: 10px;
+}
+
+.basics-image {
+    flex: 2;
+}
+
+.basics-image img {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Rummy Terms */
+.rummy-terms {
+    padding: 60px 0;
+    background-color: var(--light-color);
+    margin-bottom: 60px;
+}
+
+.terms-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.term-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.term-card:hover {
+    transform: translateY(-5px);
+}
+
+.term-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.term-card p {
+    margin-bottom: 15px;
+    color: var(--text-light);
+}
+
+.term-example {
+    background-color: var(--accent-color);
+    padding: 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: var(--dark-color);
+}
+
+/* Rummy Variants */
+.rummy-variants {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.variant-section {
+    margin-bottom: 50px;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: var(--light-color);
+}
+
+.variant-section:last-child {
+    margin-bottom: 0;
+}
+
+.variant-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.variant-content {
+    display: flex;
+    gap: 40px;
+}
+
+.variant-description {
+    flex: 3;
+}
+
+.variant-description p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.variant-description h4 {
+    color: var(--dark-color);
+    margin: 25px 0 15px;
+    font-size: 1.3rem;
+}
+
+.steps-list {
+    padding-left: 20px;
+}
+
+.steps-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.steps-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: -10px;
+}
+
+.variant-image {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.variant-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Rummy Tips */
+.rummy-tips {
+    padding: 60px 0;
+    background-color: var(--accent-color);
+    margin-bottom: 60px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tip-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.tip-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.tip-card p {
+    color: var(--text-light);
+}
+
+/* Practice Section */
+.practice-section {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 60px;
+}
+
+.practice-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.practice-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.practice-content p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.practice-content .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.practice-content .outline-btn {
+    border-color: white;
+    color: white;
+}
+
+.practice-content .outline-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .basics-content, .variant-content {
+        flex-direction: column;
+    }
+    
+    .terms-grid, .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .variant-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .variant-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .terms-grid, .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .practice-content .cta-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Rummy Combinations */
+.rummy-combinations {
+    padding: 60px 0;
+    background-color: var(--light-bg);
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rummy-combinations::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(var(--primary-rgb), 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.rummy-combinations::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(var(--primary-rgb), 0.1);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.rummy-combinations .container {
+    position: relative;
+    z-index: 2;
+}
+
+.combinations-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.combinations-text {
+    flex: 1;
+}
+
+.combinations-text p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.combinations-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.combinations-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.combinations-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.combinations-list li strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.combinations-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.combinations-image::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.1));
+    border-radius: 15px;
+    z-index: -1;
+}
+
+.full-width-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.full-width-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+    background-color: rgba(var(--primary-rgb), 0.1);
+    padding: 15px;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 4px;
+    font-weight: 500;
+    position: relative;
+}
+
+.note::before {
+    content: '!';
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .combinations-content {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .combinations-text {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .combinations-image::before {
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+    }
+    
+    .note::before {
+        left: -10px;
+    }
+}

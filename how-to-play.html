@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="How to Play Rummy - RummyRoyal. Learn the rules and strategies to master the game of Rummy.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Rummy - RummyRoyal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/how-to-play.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <h2>RummyRoyal</h2>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="how-to-play.html" class="active">How to Play</a></li>
+                    <li><a href="rummy-app.html">Rummy App</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                </ul>
+            </nav>
+            <div class="age-restriction">
+                <span class="age-badge">18+</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>How to Play Rummy</h1>
+                <p>Learn the rules and strategies to master the game of Rummy</p>
+            </div>
+            <div class="animated-cards">
+                <div class="animated-card card-1"></div>
+                <div class="animated-card card-2"></div>
+                <div class="animated-card card-3"></div>
+                <div class="animated-card card-4"></div>
+            </div>
+        </section>
+
+        <section class="rummy-basics">
+            <div class="container">
+                <h2 class="section-title">Rummy Basics</h2>
+                <div class="basics-content">
+                    <div class="basics-text">
+                        <p>Rummy is a group of matching-card games notable for similar gameplay based on matching cards of the same rank or sequence and same suit. The basic goal in any form of rummy is to build melds which consist of sets, three or four of a kind of the same rank; or runs, three or more cards in sequence, of the same suit.</p>
+                        <h3>Objective</h3>
+                        <p>The objective of rummy is to arrange your cards into valid sets and sequences. The first player to arrange all their cards into valid combinations and declare "Rummy" wins the game.</p>
+                        <h3>Card Values</h3>
+                        <ul class="card-values">
+                            <li><strong>Face cards (K, Q, J)</strong>: 10 points each</li>
+                            <li><strong>Ace</strong>: 10 points</li>
+                            <li><strong>Number cards</strong>: Face value (e.g., 8 of hearts = 8 points)</li>
+                            <li><strong>Joker</strong>: 0 points</li>
+                        </ul>
+                    </div>
+                    <div class="basics-image">
+                        <img src="images/hero-rummy.jpg" alt="Rummy Cards">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rummy-combinations">
+            <div class="container">
+                <h2 class="section-title scroll-animate from-bottom">Valid Rummy Combinations</h2>
+                <div class="combinations-content">
+                    <div class="combinations-text scroll-animate from-left">
+                        <p>In Rummy, forming the right combinations is key to winning. Here are the main valid combinations you need to know:</p>
+                        <ul class="combinations-list">
+                            <li><strong>Pure Sequence:</strong> Cards of the same suit in consecutive order (e.g., 3♦, 4♦, 5♦, 6♦)</li>
+                            <li><strong>Impure Sequence:</strong> Consecutive cards with one or more jokers (e.g., A♥, 8♣, 3♥)</li>
+                            <li><strong>Set:</strong> Cards of the same rank but different suits (e.g., K♥, K♦, K♠)</li>
+                            <li><strong>Invalid Combinations:</strong> Cards that don't form a sequence or set are considered invalid</li>
+                        </ul>
+                        <p class="note">Remember: You must have at least one pure sequence to make a valid declaration!</p>
+                    </div>
+                    <div class="combinations-image scroll-animate from-right">
+                        <img src="images/rummy-combinations.jpg" alt="Valid Rummy Combinations" class="full-width-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rummy-terms">
+            <div class="container">
+                <h2 class="section-title">Important Rummy Terms</h2>
+                <div class="terms-grid">
+                    <div class="term-card">
+                        <h3>Set</h3>
+                        <p>A group of three or four cards of the same rank but different suits.</p>
+                        <div class="term-example">Example: 7♠ 7♥ 7♦</div>
+                    </div>
+                    <div class="term-card">
+                        <h3>Sequence</h3>
+                        <p>A group of three or more consecutive cards of the same suit.</p>
+                        <div class="term-example">Example: 4♣ 5♣ 6♣</div>
+                    </div>
+                    <div class="term-card">
+                        <h3>Pure Sequence</h3>
+                        <p>A sequence formed without using any joker cards.</p>
+                        <div class="term-example">Example: 9♥ 10♥ J♥</div>
+                    </div>
+                    <div class="term-card">
+                        <h3>Impure Sequence</h3>
+                        <p>A sequence formed using one or more joker cards.</p>
+                        <div class="term-example">Example: 3♦ 4♦ Joker (replacing 5♦)</div>
+                    </div>
+                    <div class="term-card">
+                        <h3>Joker</h3>
+                        <p>A card that can substitute for any other card to complete a set or sequence.</p>
+                    </div>
+                    <div class="term-card">
+                        <h3>Declaration</h3>
+                        <p>Announcing that you have arranged all your cards into valid combinations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rummy-variants" id="rummy-variants">
+            <div class="container">
+                <h2 class="section-title">Rummy Variants</h2>
+                
+                <div class="variant-section" id="points-rummy">
+                    <h3 class="variant-title">Points Rummy</h3>
+                    <div class="variant-content">
+                        <div class="variant-description">
+                            <p>Points Rummy is the quickest form of rummy. In this variant, a single deal is played and the winner is decided at the end of the deal. The losing players have to pay the winner based on the points they hold in their hands.</p>
+                            <h4>How to Play Points Rummy</h4>
+                            <ol class="steps-list">
+                                <li>Each player is dealt 13 cards.</li>
+                                <li>Players take turns drawing and discarding cards.</li>
+                                <li>The objective is to form valid sets and sequences with all 13 cards.</li>
+                                <li>At least one pure sequence is mandatory.</li>
+                                <li>The first player to arrange all cards and declare wins.</li>
+                                <li>Points are calculated based on the cards remaining in opponents' hands.</li>
+                            </ol>
+                        </div>
+                        <div class="variant-image">
+                            <img src="images/points-rummy.jpg" alt="Points Rummy">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="variant-section" id="pool-rummy">
+                    <h3 class="variant-title">Pool Rummy</h3>
+                    <div class="variant-content">
+											<div class="variant-image">
+												<img src="images/pool-rummy.jpg" alt="Pool Rummy">
+										</div>
+                        <div class="variant-description">
+                            <p>Pool Rummy is played with a fixed number of points (usually 101 or 201). Players who reach or exceed the maximum points are eliminated. The last player remaining is the winner.</p>
+                            <h4>How to Play Pool Rummy</h4>
+                            <ol class="steps-list">
+                                <li>Each player contributes to the prize pool.</li>
+                                <li>Multiple deals are played.</li>
+                                <li>After each deal, the loser's points are added to their total score.</li>
+                                <li>Players who reach or exceed the maximum points (101 or 201) are eliminated.</li>
+                                <li>The last player remaining wins the entire pool.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="variant-section" id="deals-rummy">
+                    <h3 class="variant-title">Deals Rummy</h3>
+                    <div class="variant-content">
+                        <div class="variant-description">
+                            <p>Deals Rummy is played for a fixed number of deals (usually 2 or 3). The player with the lowest cumulative points at the end of all deals is the winner.</p>
+                            <h4>How to Play Deals Rummy</h4>
+                            <ol class="steps-list">
+                                <li>The number of deals is decided before the game starts.</li>
+                                <li>Each deal is played like Points Rummy.</li>
+                                <li>Points from each deal are accumulated.</li>
+                                <li>After all deals are completed, the player with the lowest points wins.</li>
+                            </ol>
+                        </div>
+                        <div class="variant-image">
+                            <img src="images/deals-rummy.jpg" alt="Deals Rummy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rummy-tips">
+            <div class="container">
+                <h2 class="section-title">Tips & Strategies</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/brain.svg" alt="Brain" width="24" height="24"></div>
+                        <h3>Practice Makes Perfect</h3>
+                        <p>Start with free games to build your skills before playing for real money.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/timer.svg" alt="Timer" width="24" height="24"></div>
+                        <h3>Manage Your Time</h3>
+                        <p>Set time limits for your gaming sessions to maintain a healthy balance.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/target.svg" alt="Target" width="24" height="24"></div>
+                        <h3>Play with a Strategy</h3>
+                        <p>Develop and refine your strategy based on the specific rummy variant you're playing.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/eye.svg" alt="Eye" width="24" height="24"></div>
+                        <h3>Observe Discards</h3>
+                        <p>Pay attention to what cards your opponents are discarding.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/joker.svg" alt="Joker" width="24" height="24"></div>
+                        <h3>Use Jokers Wisely</h3>
+                        <p>Save jokers for high-value cards or to complete difficult sequences.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon"><img src="images/icons/group.svg" alt="Group" width="24" height="24"></div>
+                        <h3>Group Similar Cards</h3>
+                        <p>Arrange your cards by suits and sequences to spot combinations easily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="practice-section">
+            <div class="container">
+                <div class="practice-content">
+                    <h2>Ready to Practice?</h2>
+                    <p>Now that you know the rules, it's time to put your skills to the test. Download our app and start playing rummy with players from across India!</p>
+                    <div class="cta-buttons">
+                        <a href="rummy-app.html" class="btn primary-btn">Download App</a>
+                        <a href="contact.html" class="btn outline-btn">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+		<footer>
+			<div class="state-restriction-notice">
+					<marquee behavior="scroll" direction="left" scrollamount="5">
+							Players from Andhra Pradesh, Telangana, Assam, Nagaland and Sikkim are not allowed to play online rummy for prizes. <a href="disclaimer.html" class="notice-link">Know more</a>
+					</marquee>
+			</div>
+			<div class="footer-decorative-element"></div>
+			<div class="footer-decorative-element"></div>
+			<div class="footer-decorative-element"></div>
+			<div class="container">
+					<div class="footer-top">
+							<div class="footer-logo">
+									<h2>RummyRoyal</h2>
+									<p>India's Premier Rummy Platform</p>
+							</div>
+							<div class="footer-social">
+									<h3>Connect With Us</h3>
+									<div class="social-icons">
+											<a href="contact.html" class="social-icon" aria-label="Facebook">
+													<img src="images/icons/facebook.svg" alt="Facebook">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="Twitter">
+													<img src="images/icons/twitter.svg" alt="Twitter">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="Instagram">
+													<img src="images/icons/instagram.svg" alt="Instagram">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="YouTube">
+													<img src="images/icons/youtube.svg" alt="YouTube">
+											</a>
+									</div>
+							</div>
+							<div class="footer-download">
+									<h3>Download Our App</h3>
+									<div class="app-buttons">
+											<a href="rummy-app.html#android" class="app-btn">Android App</a>
+											<a href="rummy-app.html#ios" class="app-btn">iOS App</a>
+									</div>
+							</div>
+					</div>
+					<div class="footer-nav">
+							<div class="footer-nav-column">
+									<h3>Main Pages</h3>
+									<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="rummy-app.html">Rummy App</a></li>
+											<li><a href="contact.html">Contact</a></li>
+											<li><a href="leaderboard.html">Leaderboard</a></li>
+									</ul>
+							</div>
+							<div class="footer-nav-column">
+									<h3>About</h3>
+									<ul>
+											<li><a href="about-us.html">About Us</a></li>
+											<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+											<li><a href="privacy-policy.html">Privacy Policy</a></li>
+									</ul>
+							</div>
+							<div class="footer-nav-column">
+									<h3>Gaming</h3>
+									<ul>
+											<li><a href="responsible-gaming.html">Responsible Gaming</a></li>
+											<li><a href="disclaimer.html">Disclaimer</a></li>
+											<li><a href="how-to-play.html">How to Play</a></li>
+									</ul>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<div class="age-restriction">
+									<span class="age-badge">18+</span>
+									<p>This game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk.</p>
+							</div>
+							<p class="copyright">© 2025 RummyRoyal. All Rights Reserved.</p>
+					</div>
+			</div>
+	</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

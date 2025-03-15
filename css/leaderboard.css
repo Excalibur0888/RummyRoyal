@@ -1,0 +1,628 @@
+/* Page Header */
+.page-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Leaderboard Tabs */
+.leaderboard-tabs {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.tab-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.tab-btn:hover {
+    color: var(--dark-color);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+}
+
+.tab-btn.active::after {
+    width: 100%;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.leaderboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.leaderboard-header h2 {
+    font-size: 2rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.leaderboard-header p {
+    color: var(--text-light);
+}
+
+/* Top Players */
+.top-players {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.player-card {
+    background-color: var(--light-color);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+}
+
+.player-card.top-player {
+    padding-top: 50px;
+    animation-delay: 0.1s;
+}
+
+.player-card.second {
+    transform: translateY(20px);
+    animation-delay: 0.3s;
+}
+
+.player-card.second:hover {
+    transform: translateY(10px);
+}
+
+.player-card.third {
+    transform: translateY(40px);
+    animation-delay: 0.5s;
+}
+
+.player-card.third:hover {
+    transform: translateY(30px);
+}
+
+.player-rank {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--dark-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.player-avatar {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.player-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-color);
+}
+
+.crown {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+}
+
+.player-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.player-name {
+    font-size: 1.3rem;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.player-stats {
+    display: flex;
+    gap: 15px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+.stat-value {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.player-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.score-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* Leaderboard Table */
+.leaderboard-table {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--dark-color);
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-color);
+}
+
+tr:hover {
+    background-color: var(--accent-color);
+}
+
+.player-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.small-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Coming Soon */
+.coming-soon {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--light-color);
+    border-radius: 8px;
+}
+
+.coming-soon p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+}
+
+/* Tournaments Section */
+.tournaments {
+    padding: 60px 0;
+    background-color: var(--accent-color);
+    margin-bottom: 60px;
+}
+
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tournament-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(var(--i, 0) * 0.1s);
+}
+
+.tournament-card:hover {
+    transform: translateY(-10px);
+}
+
+.tournament-header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tournament-header h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.tournament-prize {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.tournament-details {
+    padding: 20px;
+}
+
+.tournament-info {
+    margin-bottom: 20px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.info-value {
+    color: var(--text-light);
+}
+
+.tournament-card .btn {
+    width: 100%;
+}
+
+/* Join CTA Section */
+.join-cta {
+    padding: 80px 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 60px;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* Leaderboard JavaScript */
+.tab-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .top-players {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .player-card.second, .player-card.third {
+        transform: translateY(0);
+    }
+    
+    .player-card.second:hover, .player-card.third:hover {
+        transform: translateY(-10px);
+    }
+    
+    .tournaments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        padding: 10px 20px;
+    }
+    
+    .tournaments-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .player-stats {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Animated Confetti */
+.animated-confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.confetti {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    animation: fall 10s linear infinite;
+}
+
+.confetti-1 {
+    left: 10%;
+    top: -20px;
+    background-color: #dc2836;
+    animation-delay: 0s;
+}
+
+.confetti-2 {
+    left: 20%;
+    top: -15px;
+    background-color: #5c2d91;
+    animation-delay: 1s;
+}
+
+.confetti-3 {
+    left: 30%;
+    top: -25px;
+    background-color: #ffc107;
+    animation-delay: 2s;
+}
+
+.confetti-4 {
+    left: 40%;
+    top: -10px;
+    background-color: #4caf50;
+    animation-delay: 3s;
+}
+
+.confetti-5 {
+    left: 50%;
+    top: -30px;
+    background-color: #2196f3;
+    animation-delay: 4s;
+}
+
+.confetti-6 {
+    left: 60%;
+    top: -20px;
+    background-color: #9c27b0;
+    animation-delay: 5s;
+}
+
+.confetti-7 {
+    left: 70%;
+    top: -15px;
+    background-color: #ff9800;
+    animation-delay: 6s;
+}
+
+.confetti-8 {
+    left: 80%;
+    top: -25px;
+    background-color: #e91e63;
+    animation-delay: 7s;
+}
+
+.confetti-9 {
+    left: 90%;
+    top: -10px;
+    background-color: #00bcd4;
+    animation-delay: 8s;
+}
+
+.confetti-10 {
+    left: 95%;
+    top: -30px;
+    background-color: #8bc34a;
+    animation-delay: 9s;
+}
+
+.confetti:nth-child(odd) {
+    transform: rotate(45deg);
+}
+
+.confetti:nth-child(even) {
+    width: 10px;
+    height: 10px;
+    transform: rotate(15deg);
+}
+
+.confetti:nth-child(3n) {
+    width: 8px;
+    height: 8px;
+    transform: rotate(30deg);
+}
+
+@keyframes fall {
+    0% {
+        top: -30px;
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        top: 400px;
+        transform: translateX(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Add animation to player cards */
+.player-card {
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+.player-card.top-player {
+    animation-delay: 0.1s;
+}
+
+.player-card.second {
+    animation-delay: 0.3s;
+}
+
+.player-card.third {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Add animation to tournament cards */
+.tournament-card {
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    animation-delay: calc(var(--i, 0) * 0.1s);
+} 

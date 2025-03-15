@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="Leaderboard - RummyRoyal. See who's leading the pack in our rummy competitions.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - RummyRoyal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <h2>RummyRoyal</h2>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="how-to-play.html">How to Play</a></li>
+                    <li><a href="rummy-app.html">Rummy App</a></li>
+                    <li><a href="leaderboard.html" class="active">Leaderboard</a></li>
+                </ul>
+            </nav>
+            <div class="age-restriction">
+                <span class="age-badge">18+</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Leaderboard</h1>
+                <p>See who's leading the pack in our rummy competitions</p>
+            </div>
+            <div class="animated-confetti">
+                <div class="confetti confetti-1"></div>
+                <div class="confetti confetti-2"></div>
+                <div class="confetti confetti-3"></div>
+                <div class="confetti confetti-4"></div>
+                <div class="confetti confetti-5"></div>
+                <div class="confetti confetti-6"></div>
+                <div class="confetti confetti-7"></div>
+                <div class="confetti confetti-8"></div>
+                <div class="confetti confetti-9"></div>
+                <div class="confetti confetti-10"></div>
+            </div>
+        </section>
+
+        <section class="leaderboard-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="weekly">Weekly</button>
+                    <button class="tab-btn" data-tab="monthly">Monthly</button>
+                    <button class="tab-btn" data-tab="all-time">All Time</button>
+                </div>
+                
+                <div class="tab-content active" id="weekly">
+                    <div class="leaderboard-header">
+                        <h2>Weekly Top Players</h2>
+                        <p>Rankings for the week of August 1 - August 7, 2025</p>
+                    </div>
+                    
+                    <div class="top-players">
+                        <div class="player-card top-player">
+                            <div class="player-rank">1</div>
+                            <div class="player-avatar">
+                                <img src="images/avatar-1.jpg" alt="Player Avatar">
+                                <div class="crown">👑</div>
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">RummyKing92</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">Wins:</span>
+                                        <span class="stat-value">47</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">Win Rate:</span>
+                                        <span class="stat-value">78%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-score">
+                                <span class="score-value">12,450</span>
+                                <span class="score-label">points</span>
+                            </div>
+                        </div>
+                        
+                        <div class="player-card top-player second">
+                            <div class="player-rank">2</div>
+                            <div class="player-avatar">
+                                <img src="images/avatar-2.jpg" alt="Player Avatar">
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">CardMaster</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">Wins:</span>
+                                        <span class="stat-value">42</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">Win Rate:</span>
+                                        <span class="stat-value">75%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-score">
+                                <span class="score-value">11,280</span>
+                                <span class="score-label">points</span>
+                            </div>
+                        </div>
+                        
+                        <div class="player-card top-player third">
+                            <div class="player-rank">3</div>
+                            <div class="player-avatar">
+                                <img src="images/avatar-3.jpg" alt="Player Avatar">
+                            </div>
+                            <div class="player-info">
+                                <h3 class="player-name">RummyQueen</h3>
+                                <div class="player-stats">
+                                    <div class="stat">
+                                        <span class="stat-label">Wins:</span>
+                                        <span class="stat-value">39</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-label">Win Rate:</span>
+                                        <span class="stat-value">72%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="player-score">
+                                <span class="score-value">10,850</span>
+                                <span class="score-label">points</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="leaderboard-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Wins</th>
+                                    <th>Games</th>
+                                    <th>Win Rate</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-4.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>AcePlayer</span>
+                                    </td>
+                                    <td>35</td>
+                                    <td>52</td>
+                                    <td>67%</td>
+                                    <td>9,780</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-5.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyPro</span>
+                                    </td>
+                                    <td>33</td>
+                                    <td>50</td>
+                                    <td>66%</td>
+                                    <td>9,450</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-6.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>CardShark</span>
+                                    </td>
+                                    <td>31</td>
+                                    <td>48</td>
+                                    <td>65%</td>
+                                    <td>8,920</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-7.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyWizard</span>
+                                    </td>
+                                    <td>29</td>
+                                    <td>45</td>
+                                    <td>64%</td>
+                                    <td>8,540</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-8.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>SequenceMaster</span>
+                                    </td>
+                                    <td>27</td>
+                                    <td>43</td>
+                                    <td>63%</td>
+                                    <td>8,120</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-9.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>JokerKing</span>
+                                    </td>
+                                    <td>25</td>
+                                    <td>40</td>
+                                    <td>62%</td>
+                                    <td>7,890</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-10.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyChamp</span>
+                                    </td>
+                                    <td>23</td>
+                                    <td>38</td>
+                                    <td>61%</td>
+                                    <td>7,650</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="monthly">
+                    <div class="leaderboard-header">
+                        <h2>Monthly Top Players</h2>
+                        <p>Rankings for the month of August 2025</p>
+                    </div>
+                    
+                    <!-- Monthly leaderboard content -->
+                    <div class="leaderboard-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Wins</th>
+                                    <th>Games</th>
+                                    <th>Win Rate</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-3.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyKing</span>
+                                    </td>
+                                    <td>87</td>
+                                    <td>120</td>
+                                    <td>72%</td>
+                                    <td>24,560</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-5.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>CardMaster</span>
+                                    </td>
+                                    <td>82</td>
+                                    <td>115</td>
+                                    <td>71%</td>
+                                    <td>22,780</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-7.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>AcePlayer</span>
+                                    </td>
+                                    <td>75</td>
+                                    <td>110</td>
+                                    <td>68%</td>
+                                    <td>21,450</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-2.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyPro</span>
+                                    </td>
+                                    <td>70</td>
+                                    <td>105</td>
+                                    <td>67%</td>
+                                    <td>19,820</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-9.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>GameChanger</span>
+                                    </td>
+                                    <td>65</td>
+                                    <td>100</td>
+                                    <td>65%</td>
+                                    <td>18,650</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="tab-content" id="all-time">
+                    <div class="leaderboard-header">
+                        <h2>All-Time Top Players</h2>
+                        <p>The best Rummy players of all time</p>
+                    </div>
+                    
+                    <!-- All-time leaderboard content -->
+                    <div class="leaderboard-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Wins</th>
+                                    <th>Games</th>
+                                    <th>Win Rate</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-1.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>LegendRummy</span>
+                                    </td>
+                                    <td>1245</td>
+                                    <td>1850</td>
+                                    <td>67%</td>
+                                    <td>356,780</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-4.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>MasterAce</span>
+                                    </td>
+                                    <td>1180</td>
+                                    <td>1790</td>
+                                    <td>66%</td>
+                                    <td>342,560</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-6.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyGOAT</span>
+                                    </td>
+                                    <td>1120</td>
+                                    <td>1720</td>
+                                    <td>65%</td>
+                                    <td>328,900</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-8.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>CardShark</span>
+                                    </td>
+                                    <td>1050</td>
+                                    <td>1650</td>
+                                    <td>64%</td>
+                                    <td>315,420</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="player-cell">
+                                        <img src="images/avatar-10.jpg" alt="Player Avatar" class="small-avatar">
+                                        <span>RummyWizard</span>
+                                    </td>
+                                    <td>980</td>
+                                    <td>1580</td>
+                                    <td>62%</td>
+                                    <td>298,750</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tournaments" class="tournaments">
+            <div class="container">
+                <h2 class="section-title">Upcoming Tournaments</h2>
+                <div class="tournaments-grid">
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <h3>Weekend Blitz</h3>
+                            <div class="tournament-prize">₹50,000 Prize Pool</div>
+                        </div>
+                        <div class="tournament-details">
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Date:</span>
+                                    <span class="info-value">August 12-13, 2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Entry Fee:</span>
+                                    <span class="info-value">₹500</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Players:</span>
+                                    <span class="info-value">128 max</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Format:</span>
+                                    <span class="info-value">Points Rummy</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="btn primary-btn">Register Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <h3>Monthly Championship</h3>
+                            <div class="tournament-prize">₹100,000 Prize Pool</div>
+                        </div>
+                        <div class="tournament-details">
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Date:</span>
+                                    <span class="info-value">August 25-27, 2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Entry Fee:</span>
+                                    <span class="info-value">₹1,000</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Players:</span>
+                                    <span class="info-value">256 max</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Format:</span>
+                                    <span class="info-value">Pool Rummy</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="btn primary-btn">Register Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tournament-card">
+                        <div class="tournament-header">
+                            <h3>Beginners Tournament</h3>
+                            <div class="tournament-prize">₹25,000 Prize Pool</div>
+                        </div>
+                        <div class="tournament-details">
+                            <div class="tournament-info">
+                                <div class="info-item">
+                                    <span class="info-label">Date:</span>
+                                    <span class="info-value">August 19, 2025</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Entry Fee:</span>
+                                    <span class="info-value">₹200</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Players:</span>
+                                    <span class="info-value">64 max</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Format:</span>
+                                    <span class="info-value">Deals Rummy</span>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="btn primary-btn">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Want to Join the Leaderboard?</h2>
+                    <p>Download our app and start playing to climb the ranks and win exciting prizes!</p>
+                    <a href="rummy-app.html" class="btn primary-btn">Download App</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+		<footer>
+			<div class="state-restriction-notice">
+					<marquee behavior="scroll" direction="left" scrollamount="5">
+							Players from Andhra Pradesh, Telangana, Assam, Nagaland and Sikkim are not allowed to play online rummy for prizes. <a href="disclaimer.html" class="notice-link">Know more</a>
+					</marquee>
+			</div>
+			<div class="footer-decorative-element"></div>
+			<div class="footer-decorative-element"></div>
+			<div class="footer-decorative-element"></div>
+			<div class="container">
+					<div class="footer-top">
+							<div class="footer-logo">
+									<h2>RummyRoyal</h2>
+									<p>India's Premier Rummy Platform</p>
+							</div>
+							<div class="footer-social">
+									<h3>Connect With Us</h3>
+									<div class="social-icons">
+											<a href="contact.html" class="social-icon" aria-label="Facebook">
+													<img src="images/icons/facebook.svg" alt="Facebook">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="Twitter">
+													<img src="images/icons/twitter.svg" alt="Twitter">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="Instagram">
+													<img src="images/icons/instagram.svg" alt="Instagram">
+											</a>
+											<a href="contact.html" class="social-icon" aria-label="YouTube">
+													<img src="images/icons/youtube.svg" alt="YouTube">
+											</a>
+									</div>
+							</div>
+							<div class="footer-download">
+									<h3>Download Our App</h3>
+									<div class="app-buttons">
+											<a href="rummy-app.html#android" class="app-btn">Android App</a>
+											<a href="rummy-app.html#ios" class="app-btn">iOS App</a>
+									</div>
+							</div>
+					</div>
+					<div class="footer-nav">
+							<div class="footer-nav-column">
+									<h3>Main Pages</h3>
+									<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="rummy-app.html">Rummy App</a></li>
+											<li><a href="contact.html">Contact</a></li>
+											<li><a href="leaderboard.html">Leaderboard</a></li>
+									</ul>
+							</div>
+							<div class="footer-nav-column">
+									<h3>About</h3>
+									<ul>
+											<li><a href="about-us.html">About Us</a></li>
+											<li><a href="terms-conditions.html">Terms & Conditions</a></li>
+											<li><a href="privacy-policy.html">Privacy Policy</a></li>
+									</ul>
+							</div>
+							<div class="footer-nav-column">
+									<h3>Gaming</h3>
+									<ul>
+											<li><a href="responsible-gaming.html">Responsible Gaming</a></li>
+											<li><a href="disclaimer.html">Disclaimer</a></li>
+											<li><a href="how-to-play.html">How to Play</a></li>
+									</ul>
+							</div>
+					</div>
+					<div class="footer-bottom">
+							<div class="age-restriction">
+									<span class="age-badge">18+</span>
+									<p>This game involves an element of financial risk and may be addictive. Please play responsibly and at your own risk.</p>
+							</div>
+							<p class="copyright">© 2025 RummyRoyal. All Rights Reserved.</p>
+					</div>
+			</div>
+	</footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/leaderboard.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

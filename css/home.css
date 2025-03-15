@@ -1,0 +1,598 @@
+/* Hero Section */
+.hero {
+    background-color: var(--light-color);
+    padding: 80px 0;
+    margin-bottom: 60px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Rummy Online Section */
+.rummy-online {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.rummy-online-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rummy-online-content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: var(--text-color);
+    font-size: 1.05rem;
+}
+
+.inline-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.inline-link:hover {
+    color: #d32836;
+    text-decoration: underline;
+}
+
+/* Features Section */
+.features {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.feature-card p {
+    color: var(--text-light);
+}
+
+/* Key Benefits Section */
+.key-benefits {
+    padding: 60px 0;
+    background-color: var(--light-color);
+    margin-bottom: 60px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.benefits-grid:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-column {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.benefit-column:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+		background-color: #d32836;
+		border-radius: 50%;
+		padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.benefit-column h3 {
+    color: var(--dark-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.benefit-list {
+    list-style: none;
+}
+
+.benefit-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: var(--text-color);
+}
+
+.benefit-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Game Variants Section */
+.game-variants {
+    padding: 60px 0;
+    background-color: var(--accent-color);
+    margin-bottom: 60px;
+}
+
+.variants-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.variant-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.variant-card:hover {
+    transform: translateY(-5px);
+}
+
+.variant-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.variant-card p {
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+.learn-more {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: 600;
+    position: relative;
+}
+
+.learn-more::after {
+    content: '→';
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.learn-more:hover::after {
+    margin-left: 10px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 0;
+    scrollbar-width: none; /* Firefox */
+}
+
+.testimonial-slider::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.testimonial {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.testimonial::before {
+    content: '"';
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 4rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+    font-family: Georgia, serif;
+}
+
+.testimonial p {
+    margin-bottom: 20px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+/* Responsible Gaming Section */
+.responsible-gaming {
+    padding: 60px 0;
+    background-color: var(--dark-color);
+    color: white;
+    margin-bottom: 60px;
+}
+
+.responsible-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.responsible-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.responsible-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.age-restriction-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.age-badge-large {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* State Restriction Notice */
+.state-restriction-notice {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.state-restriction-notice marquee {
+    width: 100%;
+}
+
+.notice-link {
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.notice-link:hover {
+    color: var(--light-color);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .variants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial {
+        flex: 0 0 calc(50% - 15px);
+    }
+    
+    .benefits-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        order: 2;
+    }
+    
+    .cta-buttons {
+        justify-content: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .rummy-online-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .benefits-intro {
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    .benefits-list li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-grid, .variants-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .benefit-column {
+        padding: 20px;
+    }
+    
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 60px 0;
+    background-color: #f9f5ff;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.benefits-section::before,
+.benefits-section::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.benefits-section::before {
+    top: 0;
+}
+
+.benefits-section::after {
+    bottom: 0;
+}
+
+.benefits-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.benefits-intro {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.benefits-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.benefits-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 80px 0;
+    background-color: var(--dark-color);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(92, 45, 145, 0.8) 0%, rgba(220, 40, 54, 0.8) 100%);
+    z-index: 1;
+}
+
+.stats-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.stats-section .section-title {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-icon img {
+    width: 48px;
+    height: 48px;
+    filter: invert(1);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+} 

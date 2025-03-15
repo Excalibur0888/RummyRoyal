@@ -1,0 +1,702 @@
+/* App Hero Section */
+.app-hero {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.app-hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.app-hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.app-hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.app-download-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.android-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.android-btn:hover {
+    background-color: #d32836;
+		color: white;
+
+}
+
+.ios-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.ios-btn:hover {
+    background-color: #d32836;
+		color: white;
+}
+
+.btn-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-small-text {
+    font-size: 0.7rem;
+    opacity: 0.8;
+}
+
+.btn-large-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.app-hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.app-hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* App Features Section */
+.app-features {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon img {
+    width: 48px;
+    height: 48px;
+}
+
+.feature-item h3 {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.feature-item p {
+    color: var(--text-light);
+}
+
+/* App Download Sections */
+.app-download {
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.app-download:nth-of-type(odd) {
+    background-color: var(--light-color);
+}
+
+.app-download:nth-of-type(even) {
+    background-color: white;
+}
+
+.download-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.download-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.download-info {
+    flex: 1;
+}
+
+.download-info h2 {
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.download-info p {
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+
+.download-steps {
+    margin-bottom: 30px;
+}
+
+.download-steps li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.download-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-version {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.download-image {
+    flex: 1;
+    text-align: center;
+}
+
+.download-image img {
+    max-width: 80%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* App Requirements Section */
+.app-requirements {
+    padding: 60px 0;
+    background-color: var(--accent-color);
+    margin-bottom: 60px;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.requirement-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.requirement-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.requirements-list {
+    list-style: none;
+}
+
+.requirements-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.requirements-list li::before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* App Testimonials Section */
+.app-testimonials {
+    padding: 60px 0;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.testimonials-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.testimonials-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 calc(33.333% - 20px);
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-rating {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 2px;
+}
+
+.testimonial-rating img {
+    width: 16px;
+    height: 16px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.user-device {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* App FAQ Section */
+.app-faq {
+    padding: 60px 0;
+    background-color: var(--light-color);
+    margin-bottom: 60px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    padding: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+    cursor: pointer;
+    position: relative;
+    padding-right: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(92, 45, 145, 0.05);
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active {
+    background-color: rgba(92, 45, 145, 0.1);
+}
+
+.faq-question.active::after {
+    content: "-";
+    transform: translateY(-50%);
+}
+
+.faq-answer {
+    padding: 0 20px 20px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* App CTA Section */
+.app-cta {
+    padding: 80px 0;
+    background-color: var(--primary-color);
+    color: white;
+    margin-bottom: 60px;
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.cta-content .app-download-buttons {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.age-restriction-large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age-badge-large {
+    background-color: white;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Install Steps Section */
+.install-steps {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    margin-bottom: 60px;
+}
+
+.install-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: #ddd;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background-color: #30c4f4;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step-content {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.step-text {
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.step-image {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f9ff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.step-image img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .download-content, .download-content.reverse {
+        flex-direction: column;
+    }
+    
+    .download-image {
+        order: -1;
+        margin-bottom: 30px;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 calc(50% - 15px);
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-hero .container {
+        flex-direction: column;
+    }
+    
+    .app-hero-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .app-download-buttons {
+        justify-content: center;
+    }
+    
+    .app-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .download-action {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .app-version {
+        margin-top: 15px;
+    }
+    
+    .steps-container {
+        flex-direction: column;
+    }
+    
+    .step-item:not(:last-child)::after {
+        top: auto;
+        right: auto;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .app-download-buttons {
+        flex-direction: column;
+    }
+    
+    .testimonial-card {
+        flex: 0 0 100%;
+    }
+    
+    .app-hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Animated Bubbles */
+.animated-bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(220, 40, 54, 0.2) 0%, rgba(92, 45, 145, 0.2) 100%);
+    backdrop-filter: blur(5px);
+    animation: float-bubble 15s infinite ease-in-out;
+}
+
+.bubble-1 {
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.bubble-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.bubble-3 {
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    right: 15%;
+    animation-delay: 4s;
+}
+
+.bubble-4 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    right: 10%;
+    animation-delay: 6s;
+}
+
+.bubble-5 {
+    width: 70px;
+    height: 70px;
+    bottom: 40%;
+    left: 5%;
+    animation-delay: 8s;
+}
+
+.bubble-6 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    right: 5%;
+    animation-delay: 10s;
+    opacity: 0.1;
+}
+
+@keyframes float-bubble {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+} 
