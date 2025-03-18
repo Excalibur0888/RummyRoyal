@@ -61,6 +61,14 @@ img {
     height: auto;
 }
 
+body {
+	overflow-x: hidden;
+}
+
+main {
+	overflow-x: hidden;
+}
+
 .section-title {
     text-align: center;
     margin-bottom: 40px;
