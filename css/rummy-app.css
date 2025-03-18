@@ -53,9 +53,8 @@
 }
 
 .android-btn:hover {
-    background-color: #d32836;
+    background-color: #000;
 		color: white;
-
 }
 
 .ios-btn {
@@ -64,7 +63,7 @@
 }
 
 .ios-btn:hover {
-    background-color: #d32836;
+		background-color: #000;
 		color: white;
 }
 

@@ -599,6 +599,26 @@ footer::after {
     max-width: 600px;
 }
 
+.footer-badges {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-badges img {
+    height: 40px;
+    width: auto;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+
+.footer-badges img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+
 .copyright {
     color: #a0a0a0;
     font-size: 0.9rem;
